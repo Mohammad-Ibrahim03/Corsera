@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Clone - Bootstrap 5</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <!-- 1. Header / Navbar -->
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-primary fs-3 me-4" href="#">coursera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNav">
+                <form class="d-flex me-auto my-2 my-lg-0 w-50">
+                    <div class="input-group">
+                        <input class="form-control rounded-start-pill border-end-0" type="search" placeholder="What do you want to learn?">
+                        <button class="btn btn-outline-secondary border-start-0 rounded-end-pill bg-white" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center gap-3 ms-auto">
+                    <a href="#" class="btn btn-link text-decoration-none text-dark fw-semibold">Log In</a>
+                    <a href="#" class="btn btn-primary rounded-pill px-4 fw-semibold">Join for Free</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Banner Section -->
+    <section class="container my-4">
+        <div class="row g-3">
+            <!-- Promo Card 1 -->
+            <div class="col-lg-8">
+                <div class="p-5 text-white bg-primary rounded-4 shadow-sm position-relative overflow-hidden h-100">
+                    <span class="badge bg-light text-primary mb-3">7 Days Left!</span>
+                    <h1 class="display-5 fw-bold mb-3">Save 40% on 3 months of Coursera Plus</h1>
+                    <p class="fs-5 mb-4">Grow with the flexibility that busy learners need. Start with Coursera Plus at a special price.</p>
+                    <a href="#" class="btn btn-light text-primary fw-bold btn-lg px-4 rounded-pill">Save now &rarr;</a>
+                </div>
+            </div>
+            <!-- Promo Card 2 -->
+            <div class="col-lg-4">
+                <div class="p-5 text-white bg-dark rounded-4 shadow-sm h-100">
+                    <h2 class="fw-bold mb-3">Learn AI from the companies building it</h2>
+                    <p class="text-secondary mb-4">Courses and certificates from Google, OpenAI, Anthropic, and IBM for every level and role.</p>
+                    <a href="#" class="btn btn-outline-light fw-bold rounded-pill px-4">Explore AI courses &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. New and Popular Section -->
+    <section class="container my-5">
+        <h3 class="fw-bold mb-4">New and popular</h3>
+        <div class="row g-4">
+            <!-- Course Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <span class="text-muted small fw-semibold">Google</span>
+                        <h5 class="card-title fw-bold mt-1">Google Data Analytics</h5>
+                        <p class="card-text text-muted small">Professional Certificate</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="badge bg-light text-dark border"><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <span class="text-muted small fw-semibold">University of Michigan</span>
+                        <h5 class="card-title fw-bold mt-1">Python for Everybody</h5>
+                        <p class="card-text text-muted small">Specialization</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="badge bg-light text-dark border"><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <span class="text-muted small fw-semibold">IBM</span>
+                        <h5 class="card-title fw-bold mt-1">IBM Generative AI Engineering</h5>
+                        <p class="card-text text-muted small">Professional Certificate</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="badge bg-light text-dark border"><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Explore Categories -->
+    <section class="bg-white py-5 my-5">
+        <div class="container">
+            <h3 class="fw-bold mb-4">Explore categories</h3>
+            <div class="d-flex gap-2 flex-wrap">
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Business</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Artificial Intelligence</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Data Science</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Computer Science</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Information Technology</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Personal Development</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill px-3">Language Learning</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials Section -->
+    <section class="container my-5">
+        <h3 class="fw-bold text-center mb-5">Why people choose Coursera</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <div class="card-body">
+                        <p class="card-text text-muted">"Coursera's reputation for high-quality content paired with its flexible structure made it possible for me to dive into data analytics."</p>
+                        <h6 class="fw-bold mb-0">Sarah W.</h6>
+                        <small class="text-muted">Data Analyst</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <div class="card-body">
+                        <p class="card-text text-muted">"Learning with Coursera has expanded my professional expertise by giving me access to cutting-edge research and practical tools."</p>
+                        <h6 class="fw-bold mb-0">Anas A.</h6>
+                        <small class="text-muted">Software Engineer</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <div class="card-body">
+                        <p class="card-text text-muted">"I now feel more prepared to take on leadership roles and have already started mentoring colleagues."</p>
+                        <h6 class="fw-bold mb-0">Abdullahi M.</h6>
+                        <small class="text-muted">Project Manager</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FAQ Accordion -->
+    <section class="container my-5 w-75">
+        <h3 class="fw-bold text-center mb-4">Frequently asked questions</h3>
+        <div class="accordion shadow-sm rounded-3 overflow-hidden" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Is Coursera accredited, and are certificates recognized?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, certificates are issued directly by leading universities and companies like Google and IBM, and are widely recognized by employers.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Does Coursera offer free online courses?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, you can audit many courses for free to access course materials and lectures.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5 class="fw-bold text-primary mb-3">coursera</h5>
+                    <p class="small text-secondary">Providing universal access to the world’s best education, partnering with top universities and organizations.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Top Skills</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Artificial Intelligence</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Data Analytics</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Python</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Certificates</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Google IT Support</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">IBM Data Science</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Community</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Learners</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Partners</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex justify-content-between align-items-center small text-secondary">
+                <span>&copy; 2026 Coursera Inc. All rights reserved.</span>
+                <div class="d-flex gap-3 fs-5">
+                    <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
